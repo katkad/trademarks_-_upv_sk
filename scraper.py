@@ -5,6 +5,7 @@ import scraperwiki
 import lxml.html
 import re
 from datetime import datetime
+from time import sleep
 
 #this could use enum, not sure if scraperwiki supports it
 statusDict = \
@@ -81,7 +82,7 @@ for id in xrange(min_id, max_id+1):
         root = fetchHtml(detailUrl % id)
     except:
         print "Failed to fetch id %d" % id
-        sleep 5
+        sleep(5)
         continue
     rows = root.cssselect("table tr")
     
