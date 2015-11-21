@@ -92,7 +92,7 @@ for id in xrange(min_id, max_id+1):
         root = fetchHtml(detailUrl % id)
     except:
         print "Failed to fetch id %d" % id
-        sleep(5)
+        sleep(30)
         continue
     rows = root.cssselect("table tr")
     
