@@ -21,7 +21,7 @@ overviewUrl="http://registre.indprop.gov.sk/registre/search.do?value%28register%
 detailUrl = "http://registre.indprop.gov.sk/registre/detail/popup.do?register=oz&puv_id=%d"
 
 #morph.io has trouble stopping scraper after 24 hours
-time_limit = 23 * 60 * 60
+time_limit = 4 * 60 * 60
 start_time = time.time()
 
 def toDate(s):
