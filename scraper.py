@@ -97,7 +97,7 @@ for id in xrange(min_id, max_id+1):
     rows = root.cssselect("table tr")
     
     if len(rows) < 1:
-        if id % 10000 == 0:
+        if id % 1000 == 0:
             print "No data for id %d" % id
         continue
     
